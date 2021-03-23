@@ -3,8 +3,8 @@ services:
   sistema_concrete_nginx:
     container_name: sistema_concrete_nginx_container
     build:
-      dockerfile: /Users/alexandre.s.ponte/Documents/treinamentodevops/docker/docker-compose/treinamentodevops/nginx-cluster/nginx/Dockerfile
-      context: /Users/alexandre.s.ponte/Documents/treinamentodevops/docker/docker-compose/treinamentodevops/nginx-cluster/nginx
+      dockerfile: /Users/alexandre.s.ponte/Documents/treinamentodevops/docker/docker-compose/nginx/nginx-cluster/nginx/Dockerfile
+      context: /Users/alexandre.s.ponte/Documents/treinamentodevops/docker/docker-compose/nginx/nginx-cluster/nginx
     image: nginx_alexandre
     ports:
       - "3000:80"
