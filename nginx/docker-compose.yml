@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+   java:
+     container_name: javai
+     build:
+      dockerfile: /Users/alexandre.s.ponte/Documents/treinamentodevops/java/spring-app-validar-cpf-treinamento-concrete/Dockerfile
+      context: /Users/alexandre.s.ponte/Documents/treinamentodevops/java/spring-app-validar-cpf-treinamento-concrete/.
+     image: alexandreponte/validadorcpfjava2
+     ports:
+      - "3001:8080"
+   sharp:
+     container_name: sharptv
+     build:
+      dockerfile: /Users/alexandre.s.ponte/Documents/treinamentodevops/dotnet/turma-devops-dotnet/WebTddBdd/Dockerfile
+      context: /Users/alexandre.s.ponte/Documents/treinamentodevops/dotnet/turma-devops-dotnet/WebTddBdd/.
+     image: alexandreponte/validadorcpfcsharp2
+     ports:
+       - "3002:80"
+   nodeee:
+     container_name: nodejeyson
+     build:
+      dockerfile: /Users/alexandre.s.ponte/Documents/treinamentodevops/nodejs/turma-devops-nodejs/Dockerfile
+      context: /Users/alexandre.s.ponte/Documents/treinamentodevops/nodejs/turma-devops-nodejs/.
+     image: alexandreponte/validadorcpfcnodejs
+     ports:
+       - "3003:3000"
